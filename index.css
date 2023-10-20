@@ -1,0 +1,143 @@
+:root{
+    --primary:hsl(128, 57%, 15%);
+    --secondary:rgb(229, 229, 229);
+   
+    *{
+        box-sizing: border-box;
+    }
+}
+
+.body{
+    background-color: var(--primary);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+header{
+    color: var(--primary);
+    padding:10em; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.nav-container{
+    max-width: 100%;
+    padding: 3em; 
+    margin-top: -3em;
+    background-color: var(--secondary);
+}
+
+.heading img{
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0em;
+}
+
+.text-box {
+    display: flex;
+    justify-content:space-around;
+    padding: 6em;
+    margin:0.5em;
+    margin-top: 0.5em;
+    box-shadow: #f25b1b 5px 6px 5px 6px;  
+    border-radius: 2em;  
+    width: 60%;
+    height: 20%;
+    background-color: var(--secondary);
+}
+
+.flex-container-1 img{
+    width: 40%;
+    height: 50vh;
+    padding: 1em;
+    padding-left:50em; 
+    border-radius: 3%;
+    box-shadow: #f25b1b 3px 3px 3px 3px;
+}
+
+.text-box-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+    margin: 1em;
+    box-shadow: #f25b1b 5px 6px 5px 6px;
+    border-radius: 2em;
+    height: 50%;
+    width: 60%; 
+    background-color: var(--secondary);
+}
+
+
+.flex {
+    display: flex;
+    padding-left: 1em;
+    margin: 3em;
+    display: flex;
+    border-radius: 2em;
+
+}
+
+.text-box-3{
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+    margin: 1em;
+    box-shadow: #f25b1b 5px 6px 5px 6px;
+    border-radius: 2em;
+    height: 50%;
+    width: 65%; 
+    background-color: var(--secondary);
+}
+
+button {   
+    margin:2em;
+    padding: 2em;
+    box-shadow: inset 4px 4px 3px;
+    border-radius: 2em;
+    background-color: #f25b1b;
+    margin-left: 45em;
+    }
+
+.flex-container-3{
+    background-color: #f09a9a;
+    padding: 3em;
+    margin: 0 auto;
+    text-align: left; 
+}
+.flex-container-3 img{
+    border-radius: 70%;
+    width: 10em;
+    box-shadow: #f25b1b 1px 1px 1px 1px; 
+    padding: 1em;  
+}
+
+.address{
+    text-align: left;
+    border-radius: 30%;
+    padding-left: 3em;
+    margin-top: 1em;
+    }
+
+    .text-box-4{
+        display: flex;
+        justify-content:space-around;
+        box-shadow:#f25b1b 5px 6px 5px 6px;  
+        border-radius: 2em; 
+        margin-left: 15em; 
+        width: 60%;
+        height: 50%;
+    }
+
+p{
+    padding: 0.5em;
+    margin: 1em;
+}
+footer{
+    background-color: white;
+
+}
+

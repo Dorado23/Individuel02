@@ -1,0 +1,167 @@
+:root{
+    --primary:#f25b1b;
+    --secondary:#f09a9a;
+    --third: #deacac;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+    align-items: center;
+    background-color: #deacac;
+    padding-right: 20em;
+
+}
+
+header{
+    color: var(--primary);
+    margin:0;
+    padding:0; 
+    text-align: center;
+}
+
+.nav-container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em; 
+    background-color: var(--secondary);
+}
+
+
+.nav {  
+    margin:1em;
+    padding: 1em;
+    box-shadow: inset 4px 4px;
+    border-radius: 2em;
+    background-color: #f25b1b;
+    position: fixed;
+    transition: background-color 2.7s; 
+    padding-left: em;
+    }
+    
+    
+nav-container li:hover {
+background-color: var(--secondary);
+margin-bottom: 1em; justify-items: center;
+
+}
+
+
+
+main {
+    max-width: 25em;
+    margin: 0 auto;
+    padding-left: 0.5em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+form {
+    padding: 1em;
+    border: 2px var(--primary);
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 5em;
+    box-shadow: 4px 4px 4px 4px;
+    justify-content: center;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font: 1em Times New Romans;
+    border: 20em var(--primary);
+    
+}
+.checkbox {
+padding: 0;
+margin: auto;
+
+}
+
+.form-section-4{
+    display: flex;
+    flex-direction: row;
+    border-radius: 2em solid var(--primary);
+}
+
+.form-section-row{
+    display: flex;
+    flex-direction: row;
+    font: 1em Times New Romans;
+    padding: 2em;
+    border: 2px var(--primary);
+}
+
+.mat-specifik{
+padding: 0em;
+margin: 0em;
+display: flex;
+flex-direction: row;
+border-radius:2em;
+
+
+}
+
+textarea {
+display: flex;
+    border-radius: 20em;
+    box-shadow: var(--primary) 2px 2px 2px 2px;
+    width: 20em;
+    height: 3em;
+}
+
+.checkbox > div{
+    flex-direction: row;
+    display: flex;
+}
+
+label, input{
+    font-size: medium;
+    letter-spacing: 1px;
+    font: 1em Times New Romans;
+    padding: 0.5em;
+   
+}
+input{
+    padding:0.5em;
+    line-height: 1.5;
+    border-radius: 2em;
+    box-shadow: 1px 1px 1px 1px;
+}
+label{
+    display:flex;
+
+   
+}
+input:invalid{
+    border:2px dash red;
+    margin:0.5em;
+}
+input:valid{
+    border:2px solid var(--primary);
+    margin:0.5em;
+    border-radius: 2em;
+    padding: 0.5em;
+    
+}
+
+ @media screen and (max-width: 600px) {
+    main{
+        padding: 1em;
+    }
+}
