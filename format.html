@@ -3,95 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>format</title>
-   <link rel="stylesheet" href="format.css">
-   <a href="index.html"><first-page></a>
-
+    <title>Format</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="index.css">
+   
 </head>
 <body>
-    <header>
-        <header class="nav-container"> 
-            <h1>Formulär</h1>
+    <div class="container">
+        <h1 class="form-title"> Anmäla </h1>
 
-        </header>
-        
-        <div class="nav"><a href="index.html"><button>Tillbaka</button>
-        </a></li></ul></div>
-
-    </div>
-    </header>
-         
-           
-   <main>  
-<form action="/action_page.php"target="_blank">
-    <div class="form-section">
-        <label for="fname"></label>
-        <input type="text" id="fname" placeholder="För och Efternamn" required minlength="2"
-        maxlength="30">
-        <p class="error-message"></p></div>
-
-        <div class="form-section">
-            <label for="e-postadress"></label>
-            <input type="text" id="e-postadress" placeholder="e-postadress" required minlength="2"
-            maxlength="30">
-            <p class="error-message"></p></div>
-
-            <div class="form-section">
-                <label for="mobil-nummer"></label>
-                <input type="text" id="mobil-nummer" placeholder="+46" required minlength="2"
-                maxlength="30">
-                <p class="error-message"></p></div>
-
-                <div class="form-section">
-                    <label for="adress"></label>
-                    <input type="text" id="adress" placeholder="Adress" required minlength="2"
-                    maxlength="30">
-                    <p class="error-message"></p></div>
-
-
-    <div class="checkbox">
-        <h4>Välj dag seminarier</h4>
-        <div> 
-            <input id="Fredag" name="Fredag" type="checkbox"/>
-            <label for="Fredag"> Fredag: Webbutvecklingens framtid</label>
+        <div class="title">
+            <a href="index.html">Tillbaka </a>
         </div>
-            
-            <div>
-                <input id="Lördag" name="Lördag" type="checkbox"/>
-                <label for="Lördag"> Lördag: Skapa för alla</label>
+
+
+        <form action="#" > 
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="fullName"> Ditt Namn </label>
+                    <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Ange Ditt Name" required minlength="2" maxlength="20">
+                    <p class="error-message"></p>
+                </div>
+
+                    <div class="user-input-box">
+                            <label for="AngeAdress"> Ange Adress </label>
+                            <input type = "text"
+                            id= "AngeAdress"
+                            name= "AngeAdress"
+                            placeholder="Ange ditt Adress" required minlength="2" maxlength="20">
+                            <p class="error-message"></p>
+                        </div>
+
+                        
+                            <div class="user-input-box">
+                                <label for="E-postadress">E-postadress </label>
+                                <input type="text"
+                                id="E-postadress"
+                                name="E-postadress"
+                                placeholder="E-postadress" required minlength="2" maxlength="20"> 
+                                <p class="error-message"></p>
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="Mobilnummer"> Mobilenummer </label>
+                                <input type="text"
+                                id="Mobilnummer"
+                                name="Mobilnummer"
+                                placeholder="Mobilnummer" required minlength="2" maxlength="15">
+                                <p class="error-message"></p>
+                            </div>
+
+                            <div class="checkbox">
+                                <span class="checkbox-header">Välj dag seminarier </span>
+                                <div> 
+                                    <input id="Fredag" name="Fredag" type="checkbox">
+                                    <label for="Fredag"> Fredag: Webbutvecklingens framtid</label>
+                                </div>
+                                    
+                                    <div>
+                                        <input id="Lördag" name="Lördag" type="checkbox">
+                                        <label for="Lördag"> Lördag: Skapa för alla</label>
+                                    </div>
+                            
+                                     <div> 
+                                        <input id="Söndag" name="Söndag" type="checkbox">
+                                      <label for="Söndag"> Söndag: Från Design till Kod</label>
+                                    </div>   
             </div>
-    
-             <div> 
-                <input id="Söndag" name="Söndag" type="checkbox"/>
-              <label for="checkbox"> Söndag: Från Design till Kod</label>
-            </div>
 
-             
+            <div class="mat-details-box">
+                <span class="Food-details"> 
+                 Mat-preferenser: </span>
+                <div class="mat-preferens">
+                    <label for="Vegetarisk">Vegetarisk
+                    <input type="radio" name="Mat-preferenser" id="Vegetarisk"></label>
 
-            <section> 		
-<div class="mat-specifik"> 
-    <h4> Välj olika matpreferenser</h4>
-<label for="mat-specifik"></label>
-    <select id="mat-specifik" name="mat-specifik">
-        <option value="Vegetarisk">Vegetarisk</option>
-        <option value="Fisk">Fisk</option>
-        <option value="Kött">Kött</option>
-    </select>
-</div>
- </section>
-
-<section> 
-<div class="textarea"></div>
+                    <label for="Kött">Kött
+                    <input type="radio" name="Mat-preferenser" id="Kött"></label>
+                    
+                    <label for="Fisk">Fisk
+                    <input type="radio" name="Mat-preferenser" id="Fisk">
+                </label>
+                    
+                </div>
+                    
+                <div class="textarea"></div>
 <textarea name="message" rows="2" cols="20">
     Ange Allegier
-    </textarea></section> 
+    </textarea>
 
-<section class="form-section-row">
-    <input type="submit" value="submit">    
-</section>
+            </div>
+            
 
-</form>
-   </main>
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Anmäla">
+               
+                
+            </div>
+        </form>
+    </div>
+    
+
+    
 </body>
-
 </html>
